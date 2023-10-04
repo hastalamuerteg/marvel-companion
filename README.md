@@ -1,3 +1,25 @@
+# App
+
+Marvel Companion App.
+
+## RFs (Requisitos funcionais)
+
+São as funcionalidades da aplicação
+
+- [] Deve ser possível listar personagens;
+- [] Deve ser possível mostrar informações de um personagem específico;
+- [] Deve ser possível pesquisar por um personagem;
+
+## RNs (Regras de negócio)
+
+Caminhos que cada requisito funcional pode tomar, condições que serão aplicadas
+a regra de negócio
+
+## RNFs (Requisitos não funcionais)
+
+Requisitos técnicos
+Estratégia, arquitetura, banco de dados
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
