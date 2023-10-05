@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { getCharacterById, getComicsByCharacterId } from 'app/services'
 import { NoDataEmpty } from '@/components/emptyStates/no-data-empty'
+import AiGeneratedCharacterInfo from './ai-generated-character-info'
 
 interface ICharacterInfoParams {
   characterId: string
@@ -15,12 +16,9 @@ export default async function CharacterInfo({
   const character = dataCharacters?.results[0]
   const comics = dataComics?.results
 
-  // if (!character || !comics) {
-  //   return <NoDataEmpty text="No data" />
-  // }
-
   return (
     <>
+      <AiGeneratedCharacterInfo characterName={character?.name} />
       <div className="flex flex-col md:flex-row gap-4">
         <Image
           className="w-[250px] h-auto object-cover rounded-lg"

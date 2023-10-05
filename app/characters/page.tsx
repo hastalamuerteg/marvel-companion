@@ -38,7 +38,7 @@ export default async function Page({ searchParams }: IPageParams) {
             }}
             className={`flex justify-center items-center rounded-lg ${
               page === 1
-                ? 'bg-gray-700 pointer-events-none'
+                ? 'bg-zinc-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'
             } w-28 h-10  text-white`}
           >
@@ -51,7 +51,7 @@ export default async function Page({ searchParams }: IPageParams) {
             }}
             className={`flex justify-center items-center rounded-lg ${
               page === 1
-                ? 'bg-gray-700 pointer-events-none'
+                ? 'bg-zinc-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'
             } w-14 h-10  text-white`}
           >
@@ -66,7 +66,7 @@ export default async function Page({ searchParams }: IPageParams) {
             }}
             className={`flex justify-center items-center rounded-lg ${
               page === lastPage
-                ? 'bg-gray-700 pointer-events-none'
+                ? 'bg-zinc-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'
             } w-14 h-10  text-white`}
           >
@@ -79,7 +79,7 @@ export default async function Page({ searchParams }: IPageParams) {
             }}
             className={`flex justify-center items-center rounded-lg ${
               page === lastPage
-                ? 'bg-gray-700 pointer-events-none'
+                ? 'bg-zinc-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'
             } w-28 h-10  text-white`}
           >

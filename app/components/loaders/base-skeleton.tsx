@@ -6,7 +6,7 @@ interface IBaseSkeletonProps {
 export const BaseSkeleton = ({ height, width }: IBaseSkeletonProps) => {
   return (
     <div
-      className={`bg-gray-300 animate-pulse ${width} ${height} rounded-lg`}
+      className={`bg-zinc-300 animate-pulse ${width} ${height} rounded-lg`}
     />
   )
 }

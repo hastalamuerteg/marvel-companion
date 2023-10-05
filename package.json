@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ai": "^2.2.14",
     "lucide-react": "^0.284.0",
     "next": "latest",
+    "openai": "^4.11.1",
+    "openai-edge": "^1.2.2",
     "react": "latest",
     "react-dom": "latest"
   },
