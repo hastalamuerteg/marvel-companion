@@ -6,8 +6,8 @@ Marvel Companion App.
 
 São as funcionalidades da aplicação
 
-- [] Deve ser possível listar personagens;
-- [] Deve ser possível mostrar informações de um personagem específico;
+- [x] Deve ser possível listar personagens;
+- [x] Deve ser possível mostrar informações de um personagem específico;
 - [] Deve ser possível pesquisar por um personagem;
 
 ## RNs (Regras de negócio)
