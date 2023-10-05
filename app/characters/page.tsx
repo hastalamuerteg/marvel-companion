@@ -17,6 +17,10 @@ export default async function Page({ searchParams }: IPageParams) {
 
   const lastPage = Math.ceil(data?.total / 20)
 
+  if (isNaN(Number(page))) {
+    throw new Error('Invalid page')
+  }
+
   return (
     <div className="max-w-[1200px] w-full h-screen mx-auto flex flex-col items-center gap-4 p-4">
       <div className="w-full flex flex-col md:flex-row justify-between gap-4 my-16 p-4">
@@ -32,7 +36,7 @@ export default async function Page({ searchParams }: IPageParams) {
               pathname: '/characters',
               query: { page: 1 },
             }}
-            className={`flex justify-center items-center ${
+            className={`flex justify-center items-center rounded-lg ${
               page === 1
                 ? 'bg-gray-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'
@@ -45,7 +49,7 @@ export default async function Page({ searchParams }: IPageParams) {
               pathname: '/characters',
               query: { page: page > 1 ? page - 1 : 1 },
             }}
-            className={`flex justify-center items-center ${
+            className={`flex justify-center items-center rounded-lg ${
               page === 1
                 ? 'bg-gray-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'
@@ -60,7 +64,7 @@ export default async function Page({ searchParams }: IPageParams) {
                 page: page + 1,
               },
             }}
-            className={`flex justify-center items-center ${
+            className={`flex justify-center items-center rounded-lg ${
               page === lastPage
                 ? 'bg-gray-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'
@@ -73,7 +77,7 @@ export default async function Page({ searchParams }: IPageParams) {
               pathname: '/characters',
               query: { page: lastPage },
             }}
-            className={`flex justify-center items-center ${
+            className={`flex justify-center items-center rounded-lg ${
               page === lastPage
                 ? 'bg-gray-700 pointer-events-none'
                 : 'bg-red-500 hover:bg-red-600'

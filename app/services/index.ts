@@ -3,6 +3,7 @@ import {
   IGetCharacterByIdResponse,
   IGetCharactersRequest,
   IGetCharactersResponse,
+  IGetComicsByCharacterIdResponse,
 } from 'app/models'
 
 export const getCharacters = async ({
@@ -28,6 +29,18 @@ export const getCharacterById = async (id: number) => {
     `http://gateway.marvel.com/v1/public/characters/${id}?ts=${timestamp}&apikey=${process.env.PUBLIC_API_KEY}&hash=${hash}`,
   )
   const data: IGetCharacterByIdResponse = await response.json()
+
+  return data
+}
+
+export const getComicsByCharacterId = async (id: number) => {
+  const timestamp = generateTimestamp()
+  const hash = generateRequestHash()
+
+  const response = await fetch(
+    `http://gateway.marvel.com/v1/public/characters/${id}/comics?ts=${timestamp}&apikey=${process.env.PUBLIC_API_KEY}&hash=${hash}`,
+  )
+  const data: IGetComicsByCharacterIdResponse = await response.json()
 
   return data
 }

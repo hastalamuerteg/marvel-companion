@@ -5,6 +5,6 @@
 body {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.65)) fixed,
-    url("../public/bg-marvel.jpg") center fixed;
+    url("../public/bg-marvel-1.jpg") center fixed;
   color: #b9b9b9;
 }
