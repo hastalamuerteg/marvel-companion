@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const Header = () => {
   return (
-    <header className="flex flex-col items-center w-full gap-4 pt-4 bg-gradient-to-l from-red-500 via-red-700 to-red-500 shadow-xl">
+    <header className="fixed top-0 flex flex-col items-center w-full gap-4 pt-4 bg-gradient-to-l from-red-500 via-red-700 to-red-500 shadow-xl">
       <Image
         className="w-[150px] h-auto"
         src={marvelLogo}
