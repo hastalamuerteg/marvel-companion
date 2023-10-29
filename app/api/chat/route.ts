@@ -18,8 +18,8 @@ export async function POST(request: NextRequest) {
     const response = await openai.chat.completions.create({
       model: 'gpt-3.5-turbo-16k',
       stream: true,
-      temperature: 0.7,
-      max_tokens: 70,
+      temperature: 0.5,
+      max_tokens: 100,
       messages: [
         {
           role: 'user',

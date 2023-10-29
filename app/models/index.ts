@@ -56,3 +56,18 @@ export interface IGetComicsByCharacterIdResponse {
     results: IComic[]
   }
 }
+
+export interface IGetComicsRequest {
+  offset: number
+  limit?: number
+}
+
+export interface IGetComicsResponse {
+  data: {
+    offset: number
+    limit: number
+    total: number
+    count: number
+    results: IComic[]
+  }
+}
